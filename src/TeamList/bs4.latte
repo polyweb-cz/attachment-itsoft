@@ -1,0 +1,85 @@
+{var $data = $values->{"polyweb-cz/attachment-itsoft/TeamList"}}
+{var $extensionData = $extension->getData()}
+{var $imageData = $extensionData['images']}
+{var $countImages = count($imageData)}
+{var $countBoxes = count(json_decode(json_encode($data->teamGroup), true))}
+
+{if $countImages != $countBoxes}
+	{for $index = 1; $index <= abs($countBoxes - $countImages); $index++}
+		{if $countBoxes > $countImages}
+
+			{php
+				$imageData[] = $imageData[0];
+			}
+		{else}
+			{php
+				array_pop($imageData);
+			}
+		{/if}
+	{/for}
+{/if}
+
+<div class="row" n:group="teamGroup">
+	{foreach $data->teamGroup as $item}
+		{var $image = $imageData[$iterator->counter0]['image']}
+		<div class="elm col" n:group-child
+		data-extension-data="{json_encode(['image' => $image->getId()])}"
+			 data-extension-key="images"
+		>
+			<div class="wrapper">
+				<div class="team">
+
+					<div class="team-content-image-inner">
+						<div class="team-content-image">
+							<picture class="img-fluid text-center" n:picture="xl, lg, md, sm, xs, lg" alt="NoImage"
+									 data-image="$image">
+							</picture>
+						</div>
+						<div class="team-content-socials-inner">
+							<div class="team-content-socials">
+
+								{*								<a n:varname="socialFacebook">{$text}<i class="fa fa-facebook"></i></a>*}
+								<a n:varname="socialLink1" n:editable>
+									<i n:varname="social1" n:editable></i>
+								</a>
+								<a n:varname="socialLink2" n:editable>
+									<i n:varname="social2" n:editable></i>
+								</a>
+								<a n:varname="socialLink3" n:editable>
+									<i n:varname="social3" n:editable></i>
+								</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="team-content-wrapper">
+						<div class="team-content-inner">
+							<div class="team-content-title-inner">
+								<div class="team-content-title">
+									<h2 n:varname="personName" n:editable>{$text}</h2>
+								</div>
+							</div>
+							<div class="team-content-subtitle-inner">
+								<div class="team-content-subtitle">
+									<div n:varname="personFunction" n:editable>{$text}</div>
+								</div>
+								<p>
+									<span n:varname="emailText" n:editable class="email">{$text}</span><a class="email-link" n:varname="email" n:editable>{$text}</a>
+								</p>
+								<p>
+									<span n:varname="phoneText" n:editable class="phone">{$text}</span><a class="phone-link" n:varname="phone" n:editable>{$text}</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	{/foreach}
+</div>
+
+{$extensionInput}
+{$optionsInput}
+
+

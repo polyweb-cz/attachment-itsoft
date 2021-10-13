@@ -1,0 +1,259 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+	"attachmentName": "TeamList",
+	"extension": "MultiplePicture",
+	"labelList": [
+		"Box"
+	],
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"translations": {
+		"progressHeader": "Nadpis boxu",
+		"progressDesc": "Popis boxu",
+		"progressNumber": "Číslo v boxu"
+	},
+	"elements": {
+		"defaultGroup": [
+		],
+		"teamGroup": [
+			[
+				{
+					"elementType": "Heading",
+					"varName": "personName",
+					"defaults": {
+						"text": "Jmeno Prijmeni"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "personFunction",
+					"defaults": {
+						"text": "Manazerska pozice"
+					}
+				},
+				{
+					"elementType": "LinkNoEdit",
+					"varName": "socialFacebook",
+					"defaults": {
+						"text": ""
+					}
+				},
+				{
+					"elementType": "LinkNoEdit",
+					"varName": "socialLink1",
+					"defaults": {
+						"href": "https://instagram.com",
+						"title": "Odkaz na instagram"
+					}
+				},
+				{
+					"elementType": "IconButtonNoEdit",
+					"varName": "social1",
+					"defaults": {
+						"text": "",
+						"icon": "fa fa-facebook"
+					}
+				},
+				{
+					"elementType": "LinkNoEdit",
+					"varName": "socialLink2",
+					"defaults": {
+						"href": "https://instagram.com",
+						"text": "",
+						"title": "Odkaz na instagram",
+						"icon": "fa fa-instagram"
+					}
+				},
+				{
+					"elementType": "IconButtonNoEdit",
+					"varName": "social2",
+					"defaults": {
+						"text": "",
+						"icon": "instagram"
+					}
+				},
+				{
+					"elementType": "LinkNoEdit",
+					"varName": "socialLink3",
+					"defaults": {
+						"href": "https://instagram.com",
+						"text": "",
+						"title": "Odkaz na instagram",
+						"icon": "instagram"
+					}
+				},
+				{
+					"elementType": "IconButtonNoEdit",
+					"varName": "social3",
+					"defaults": {
+						"text": "",
+						"icon": "instagram"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "emailText",
+					"defaults": {
+						"text": "E-mail: "
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "phoneText",
+					"defaults": {
+						"text": "Tel: "
+					}
+				},
+				{
+					"elementType": "Email",
+					"varName": "email",
+					"defaults": {
+						"text": "Napište mi",
+						"href": "me@example.com"
+					}
+				},
+				{
+					"elementType": "Phone",
+					"varName": "phone",
+					"defaults": {
+						"text": "Zavolejte mi",
+						"href": "123456789"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"type": "color",
+			"defaultValue": "#FF3C00",
+			"keyName": "teamListIconColor"
+		},
+		{
+			"type": "color",
+			"defaultValue": "#FF3C00F0",
+			"keyName": "teamListWrapperColor"
+		},
+		{
+			"type": "color",
+			"defaultValue": "#232323",
+			"keyName": "teamListHeadingColor"
+		},
+		{
+			"label": "Nadpis",
+			"headingSize": 3,
+			"keyName": "teamListSubHeadingColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListSubHeadingFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListSubHeadingFontSize",
+			"defaultValue": "20",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Pod nadpis",
+			"headingSize": 3,
+			"keyName": "teamListHeadingChildColor",
+			"defaultValue": "#616161",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListHeadingChildFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListHeadingChildFontSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "E-mail",
+			"headingSize": 3,
+			"keyName": "teamListEmailColor",
+			"defaultValue": "#616161",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListEmailFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListEmailFontSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Odkaz e-mailu",
+			"headingSize": 3,
+			"keyName": "teamListEmailLinkColor",
+			"defaultValue": "#F7973B",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListEmailLinkFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListEmailLinkFontSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Telefon",
+			"headingSize": 3,
+			"keyName": "teamListPhoneColor",
+			"defaultValue": "#616161",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListPhoneFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListPhoneFontSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Odkaz telefonu",
+			"headingSize": 3,
+			"keyName": "teamListPhoneLinkColor",
+			"defaultValue": "#F7973B",
+			"type": "color"
+		},
+		{
+			"keyName": "teamListPhoneLinkFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "teamListPhoneLinkFontSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

@@ -1,0 +1,209 @@
+{
+		"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+	"attachmentName": "WorkProgress",
+	"extension": "MultiplePicture",
+	"labelList": [
+		"Box"
+	],
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"translations": {
+		"progressHeader": "Nadpis boxu",
+		"progressDesc": "Popis boxu",
+		"progressNumber": "Číslo v boxu"
+	},
+	"elements": {
+		"defaultGroup": [
+		],
+		"progressGroup": [
+			[
+				{
+					"elementType": "Heading",
+					"varName": "progressHeader",
+					"defaults": {
+						"text": "Vyberte službu"
+					}
+				},
+				{
+					"elementType": "Paragraph",
+					"varName": "progressDesc",
+					"defaults": {
+						"text": "Aute irure dolor reprehenderit velit esse cillum dolore fugiat"
+					}
+				},
+				{
+					"elementType": "Heading",
+					"varName": "progressNumber",
+					"defaults": {
+						"text": "01"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "Heading",
+					"varName": "progressHeader",
+					"defaults": {
+						"text": "Požádejte o schůzku"
+					}
+				},
+				{
+					"elementType": "Paragraph",
+					"varName": "progressDesc",
+					"defaults": {
+						"text": "Aute irure dolor reprehenderit velit esse cillum dolore fugiat"
+					}
+				},
+				{
+					"elementType": "Heading",
+					"varName": "progressNumber",
+					"defaults": {
+						"text": "02"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "Heading",
+					"varName": "progressHeader",
+					"defaults": {
+						"text": "Získejte vlastní tarif"
+					}
+				},
+				{
+					"elementType": "Paragraph",
+					"varName": "progressDesc",
+					"defaults": {
+						"text": "Aute irure dolor reprehenderit velit esse cillum dolore fugiat"
+					}
+				},
+				{
+					"elementType": "Heading",
+					"varName": "progressNumber",
+					"defaults": {
+						"text": "03"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "Heading",
+					"varName": "progressHeader",
+					"defaults": {
+						"text": "Pojďme na to!"
+					}
+				},
+				{
+					"elementType": "Paragraph",
+					"varName": "progressDesc",
+					"defaults": {
+						"text": "Aute irure dolor reprehenderit velit esse cillum dolore fugiat"
+					}
+				},
+				{
+					"elementType": "Heading",
+					"varName": "progressNumber",
+					"defaults": {
+						"text": "04"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"label": "pozadi",
+			"keyName": "workProgressBodyBackground",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"label": "circle-color",
+			"keyName": "workProgressCircleColor",
+			"defaultValue": "#0C144A",
+			"type": "color"
+		},
+		{
+			"keyName": "workProgressCircleTextColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "workProgressCircleTextFamily",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "workProgressCircleTextSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "circle-border",
+			"keyName": "workProgressCircleBorder",
+			"defaultValue": "#0C144A",
+			"type": "color"
+		},
+		{
+			"label": "Nadpis",
+			"keyName": "workProgressHeadingsColor",
+			"defaultValue": "#212529",
+			"type": "color"
+		},
+		{
+			"keyName": "workProgressHeadingsFamily",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "workProgressHeadingsSize",
+			"defaultValue": "35",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Odstavec",
+			"keyName": "workProgressHeadingsSmallColor",
+			"defaultValue": "#212529",
+			"type": "color"
+		},
+		{
+			"keyName": "workProgressHeadingsSmallFamily",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "workProgressHeadingsSmallSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Odstavec",
+			"keyName": "workProgressPerexFamily",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "workProgressPerexSmallSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "workProgressPerexSize",
+			"defaultValue": "35",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

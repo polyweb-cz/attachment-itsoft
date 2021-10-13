@@ -1,0 +1,46 @@
+{var $data = $values->{"polyweb-cz/attachment-itsoft/WorkProgress"}}
+{var $extensionData = $extension->getData()}
+{var $imageData = $extensionData['images']}
+{var $countImages = count($imageData)}
+{var $countBoxes = count(json_decode(json_encode($data->progressGroup), true))}
+
+{if $countImages != $countBoxes}
+	{for $index = 1; $index <= abs($countBoxes - $countImages); $index++}
+		{if $countBoxes > $countImages}
+
+			{php
+				$imageData[] = $imageData[0];
+			}
+		{else}
+			{php
+				array_pop($imageData);
+			}
+		{/if}
+	{/for}
+{/if}
+<div class="row WorkProgressBottom" n:group="progressGroup">
+	{foreach $data->progressGroup as $item}
+		{var $image = $imageData[$iterator->counter0]['image']}
+		<div class="col pb-5" n:group-child
+		data-extension-data="{json_encode(['image' => $image->getId()])}"
+			 data-extension-key="images"
+		>
+			<div class="process_thumb">
+				<picture class="text-center" n:picture="xl, lg, md, sm, xs, lg" alt="NoImage" data-image="$image">
+				</picture>
+				<div class="progress-number">
+					<span n:varname="progressNumber" n:editable>{$text}</span>
+				</div>
+			</div>
+			<div class="progress_content">
+				<div class="progress-title">
+					<h5 n:varname="progressHeader" n:editable>{$text}</h5>
+				</div>
+				<div n:classes="progress-desc" n:varname="progressDesc" n:editable>{$text}</div>
+			</div>
+		</div>
+	{/foreach}
+</div>
+
+{$extensionInput}
+{$optionsInput}
